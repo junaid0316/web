@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="servicestyle.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <title>Webmax/Service</title>
+
+    
+    <style>
+      .drps:hover .drpmenu{
+          display: block;
+      }
+      .drpmenu{
+          margin-top: 0;
+          border: 1px solid rgb(233, 233, 233);
+          border: 0px;
+      }
+  </style>
+    <script>
+      $(document).ready(function(){
+          $(".drps").hover(function(){
+              var drpmenu = $(this).children(".drpmenu");
+              if(drpmenu.is(":visible")){
+                drpmenu.parent().toggleClass("open");
+              }
+          });
+      });     
+      </script>
+</head>
+
+<body>
+
+    <div class="first">
+        <div class="mail">
+            <div class="firstico">
+                <i class="fas fa-envelope"></i>
+            </div>
+            <div class="firstwrite">
+                <p>mail@thewebmax.com</p>
+            </div>
+        </div>
+        <div class="mail">
+            <div class="firstico">
+                <i class="fas fa-phone-alt"></i>
+            </div>
+            <div class="firstwrite">
+                <p>(654) 321-7654</p>
+            </div>
+        </div>
+        <div class="mail">
+            <a href="" class="firstanc"> <i class="fab fa-facebook-f"></i></a>
+            <a href="" class="firstanc"> <i class="fab fa-twitter"></i></a>
+            <a href="" class="firstanc"><i class="fab fa-linkedin-in"></i> </a>
+            <a href="" class="firstanc"> <i class="fas fa-wifi"></i></a>
+            <a href="" class="firstanc"><i class="fab fa-youtube"></i></a>
+            <a href="" class="firstanc"> <i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+    <div class="sticky">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand navbr" href="#">
+          <h1 style="color: black; font-size: 33px;"><i class="fas fa-archway " style="color: #fcba13; margin-right: 10px;"></i><b>BUILD</b></h1>
+            </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navcol">
+            <div class="collapse coll navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav hov">
+                  <li class="nav-item dropdown drps">
+                    <a class="nav-link dropdown-toggle" href="index.html" id="navbarDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        HOME
+                    </a>
+                    <div class="dropdown-menu drpmenu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item drpitem" href="project-detail.html">Home 1</a>
+                        <a class="dropdown-item drpitem" href="project-detail.html">Home 2</a>
+                        <a class="dropdown-item drpitem" href="project-detail.html">Home 3</a>
+                        <a class="dropdown-item drpitem" href="project-detail.html">Home 4 </a>
+                        <a class="dropdown-item drpitem" href="project-detail.html">Home 5 </a>
+                        <a class="dropdown-item drpitem" href="project-detail.html">Home 6 </a>
+                        
+  
+                    </div>
+                </li>
+                <li class="nav-item dropdown drps">
+                  <a class="nav-link dropdown-toggle" href="about.html" id="navbarDropdownMenuLink" role="button"
+                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      ABOUT
+                  </a>
+                  <ul aria-labelledby="dropdownMenu1 " class="dropdown-menu drpmenu border-0 shadow">
+                    <li class="dropdown-submenu">
+                      <a id="dropdownMenu2" href="" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle  drpitem">About us</a>
+                      <ul aria-labelledby="dropdownMenu2" class="dropdown-menu border-0 shadow">
+                        <li>
+                          <a tabindex="-1" href="" class="dropdown-item  drpitem">About us 1</a>
+                        </li>
+                        <li>
+                          <a tabindex="-1" href="" class="dropdown-item drpitem">About us 2</a>
+                        </li>
+                      </ul>
+                    </li>
+                    
+                    <li class="dropdown-submenu">
+                      <a id="dropdownMenu2" href="" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle drpitem">FAQ</a>
+                      <ul aria-labelledby="dropdownMenu2" class="dropdown-menu border-0 shadow">
+                        <li>
+                          <a tabindex="-1" href="" class="dropdown-item drpitem">FAQ 1</a>
+                        </li>
+                        <li>
+                          <a tabindex="-1" href="" class="dropdown-item drpitem">FAQ 2</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li><a href="portfolio2.html" class="dropdown-item drpitem">Career</a></li>
+        
+                    <!-- Level two dropdown-->
+                    <li class="dropdown-submenu">
+                      <a id="dropdownMenu2" href="" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle drpitem">Portfolio</a>
+                      <ul aria-labelledby="dropdownMenu2" class="dropdown-menu border-0 shadow">
+                        <li>
+                          <a tabindex="-1" href="" class="dropdown-item drpitem">Portfolio 1</a>
+                        </li>
+                        <li>
+                          <a tabindex="-1" href="" class="dropdown-item drpitem">Portfolio 2</a>
+                        </li>
+                        <li>
+                          <a tabindex="-1" href="" class="dropdown-item drpitem">Portfolio 3</a>
+                        </li>
+                        <li>
+                          <a tabindex="-1" href="" class="dropdown-item drpitem">Portfolio 4</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                      <a id="dropdownMenu2" href="" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle drpitem">Our Team</a>
+                      <ul aria-labelledby="dropdownMenu2" class="dropdown-menu border-0 shadow">
+                        <li>
+                          <a tabindex="-1" href="" class="dropdown-item drpitem">Our Team 1</a>
+                        </li>
+                        <li>
+                          <a tabindex="-1" href="" class="dropdown-item drpitem">Our Team 2</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                      <a id="dropdownMenu2" href="" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle drpitem">Services</a>
+                      <ul aria-labelledby="dropdownMenu2" class="dropdown-menu border-0 shadow">
+                        <li>
+                          <a tabindex="-1" href="" class="dropdown-item drpitem">Services 1</a>
+                        </li>
+                        <li>
+                          <a tabindex="-1" href="" class="dropdown-item drpitem">Services 2</a>
+                        </li>
+                        <li>
+                          <a tabindex="-1" href="" class="dropdown-item drpitem">Services 3</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                      <a id="dropdownMenu2" href="" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle drpitem">Error</a>
+                      <ul aria-labelledby="dropdownMenu2" class="dropdown-menu border-0 shadow">
+                        <li>
+                          <a tabindex="-1" href="" class="dropdown-item drpitem">Error 1</a>
+                        </li>
+                        <li>
+                          <a tabindex="-1" href="" class="dropdown-item drpitem">Error 2</a>
+                        </li>
+                        <li>
+                          <a tabindex="-1" href="" class="dropdown-item drpitem">Error 3</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                      <a id="dropdownMenu2" href="" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle drpitem">Gallery</a>
+                      <ul aria-labelledby="dropdownMenu2" class="dropdown-menu border-0 shadow">
+                        <li>
+                          <a tabindex="-1" href="" class="dropdown-item drpitem">Gallery 1</a>
+                        </li>
+                        <li>
+                          <a tabindex="-1" href="" class="dropdown-item drpitem">Gallery 2</a>
+                        </li>
+                        <li>
+                          <a tabindex="-1" href="" class="dropdown-item drpitem">Gallery 3</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                      <a id="dropdownMenu2" href="" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle drpitem">Contact Us</a>
+                      <ul aria-labelledby="dropdownMenu2" class="dropdown-menu border-0 shadow">
+                        <li>
+                          <a tabindex="-1" href="" class="dropdown-item drpitem">Contact Us 1</a>
+                        </li>
+                        <li>
+                          <a tabindex="-1" href="" class="dropdown-item drpitem">Contact Us 2</a>
+                        </li>
+                        <li>
+                          <a tabindex="-1" href="" class="dropdown-item drpitem">Contact Us 3</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown drps">
+                  <a class="nav-link dropdown-toggle" href="portfolio.html" id="navbarDropdownMenuLink" role="button"
+                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      FEATURES
+                  </a>
+                  <ul aria-labelledby="dropdownMenu1 " class="dropdown-menu drpmenu border-0 shadow">
+                    <li class="dropdown-submenu">
+                      <a id="dropdownMenu2" href="" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle  drpitem">Header</a>
+                      <ul aria-labelledby="dropdownMenu2" class="dropdown-menu border-0 shadow">
+                        <li>
+                          <a tabindex="-1" href="" class="dropdown-item  drpitem">Header 1</a>
+                        </li>
+                        <li>
+                          <a tabindex="-1" href="" class="dropdown-item drpitem">Header 2</a>
+                        </li>
+                        <li>
+                          <a tabindex="-1" href="" class="dropdown-item  drpitem">Header 3</a>
+                        </li>
+                        <li>
+                          <a tabindex="-1" href="" class="dropdown-item drpitem">Header 4</a>
+                        </li>
+                        <li>
+                          <a tabindex="-1" href="" class="dropdown-item  drpitem">Header 5</a>
+                        </li>
+                        <li>
+                          <a tabindex="-1" href="" class="dropdown-item drpitem">Header 6</a>
+                        </li>
+                        <li>
+                          <a tabindex="-1" href="" class="dropdown-item  drpitem">Header 7</a>
+                        </li>
+                        <li>
+                          <a tabindex="-1" href="" class="dropdown-item drpitem">Header 8</a>
+                        </li>
+                        <li>
+                          <a tabindex="-1" href="" class="dropdown-item  drpitem">Header 9</a>
+                        </li>
+                        <li>
+                          <a tabindex="-1" href="" class="dropdown-item drpitem">Header 10</a>
+                        </li>
+                      </ul>
+                    </li>
+                    
+                    <li><a href="" class="dropdown-item drpitem">Footer Fixed</a></li>
+                    <li><a href="" class="dropdown-item drpitem">Footer Dark</a></li>
+                    <li><a href="" class="dropdown-item drpitem">Footer Light</a></li>
+                  </ul>
+                </li>
+                
+            <li class="nav-item dropdown drps">
+              <a class="nav-link dropdown-toggle" href="service.html" id="navbarDropdownMenuLink" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  PRODUCTS
+              </a>
+              <div class="dropdown-menu drpmenu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item drpitem" href="project-detail.html">Product 1</a>
+                  <a class="dropdown-item drpitem" href="project-detail.html">Product 2</a>
+                  <a class="dropdown-item drpitem" href="project-detail.html">Product 3</a>
+                  <a class="dropdown-item drpitem" href="project-detail.html">Product 4 </a>
+                  <a class="dropdown-item drpitem" href="project-detail.html">Product 5 </a>
+                  <a class="dropdown-item drpitem" href="project-detail.html">Product 6 </a>
+                  
+  
+              </div>
+          </li>
+          <li class="nav-item dropdown drps">
+            <a class="nav-link dropdown-toggle" href="contact.html" id="navbarDropdownMenuLink" role="button"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                BLOG
+            </a>
+            <ul aria-labelledby="dropdownMenu1 " class="dropdown-menu drpmenu border-0 shadow">
+              <li class="dropdown-submenu">
+                <a id="dropdownMenu2" href="" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle  drpitem">Media</a>
+                <ul aria-labelledby="dropdownMenu2" class="dropdown-menu border-0 shadow">
+                  <li>
+                    <a tabindex="-1" href="" class="dropdown-item  drpitem">Media List</a>
+                  </li>
+                  <li>
+                    <a tabindex="-1" href="" class="dropdown-item drpitem">Media Grid</a>
+                  </li>
+                </ul>
+              </li>
+              
+              <li class="dropdown-submenu">
+                <a id="dropdownMenu2" href="" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle drpitem">List</a>
+                <ul aria-labelledby="dropdownMenu2" class="dropdown-menu border-0 shadow">
+                  <li>
+                    <a tabindex="-1" href="" class="dropdown-item drpitem">Half image</a>
+                  </li>
+                  <li>
+                    <a tabindex="-1" href="" class="dropdown-item drpitem">Half image sidebar</a>
+                  </li>
+                  <li>
+                    <a tabindex="-1" href="" class="dropdown-item drpitem">Half image sidebar left</a>
+                  </li>
+                  <li>
+                    <a tabindex="-1" href="" class="dropdown-item drpitem">Half image</a>
+                  </li>
+                  <li>
+                    <a tabindex="-1" href="" class="dropdown-item drpitem">Half image sidebar</a>
+                  </li>
+                  <li>
+                    <a tabindex="-1" href="" class="dropdown-item drpitem">Half image sidebar left</a>
+                  </li>
+                </ul>
+              </li>
+  
+              <!-- Level two dropdown-->
+              <li class="dropdown-submenu">
+                <a id="dropdownMenu2" href="" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle drpitem">Grid</a>
+                <ul aria-labelledby="dropdownMenu2" class="dropdown-menu border-0 shadow">
+                  <li>
+                    <a tabindex="-1" href="" class="dropdown-item drpitem">Grid 2</a>
+                  </li>
+                  <li>
+                    <a tabindex="-1" href="" class="dropdown-item drpitem">Grid 2 sidebar</a>
+                  </li>
+                  <li>
+                    <a tabindex="-1" href="" class="dropdown-item drpitem">Grid 2 sidebar left</a>
+                  </li>
+                  <li>
+                    <a tabindex="-1" href="" class="dropdown-item drpitem">Grid 3</a>
+                  </li>
+                  <li>
+                    <a tabindex="-1" href="" class="dropdown-item drpitem">Grid 3 sidebar</a>
+                  </li>
+                  <li>
+                    <a tabindex="-1" href="" class="dropdown-item drpitem">Grid 3 sidebar left</a>
+                  </li>
+                  <li>
+                    <a tabindex="-1" href="" class="dropdown-item drpitem">Grid 4</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="dropdown-submenu">
+                <a id="dropdownMenu2" href="" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle drpitem">Single</a>
+                <ul aria-labelledby="dropdownMenu2" class="dropdown-menu border-0 shadow">
+                  <li>
+                    <a tabindex="-1" href="" class="dropdown-item drpitem">Single full</a>
+                  </li>
+                  <li>
+                    <a tabindex="-1" href="" class="dropdown-item drpitem">Single sidebar</a>
+                  </li>
+                  <li>
+                    <a tabindex="-1" href="" class="dropdown-item drpitem">Single sidebar left</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown drps">
+            <a class="nav-link dropdown-toggle " href="services-detail.html" id="navbarDropdownMenuLink" role="button"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                ELEMENTS
+            </a>
+            <div class="dropdown-menu ele drpmenu" aria-labelledby="navbarDropdownMenuLink">
+            <div class="elementdrp">
+                <a class="dropdown-item drpitem" href="project-detail.html"><i class="fal fa-table eleico"></i> Animation </a>
+                <a class="dropdown-item drpitem" href="project-detail.html"><i class="fas fa-th eleico"></i> Accordian </a>
+                <a class="dropdown-item drpitem" href="project-detail.html"> <i class="fas fa-exclamation-triangle eleico"></i> ALert Box </a>
+                <a class="dropdown-item drpitem" href="project-detail.html"><i class="fad fa-mailbox eleico"></i> Button  </a>
+                <a class="dropdown-item drpitem" href="project-detail.html"><i class="fas fa-user-friends eleico"></i> Clients  </a>
+                <a class="dropdown-item drpitem" href="project-detail.html"><i class="fal fa-id-card eleico"></i> Clients slider </a>
+                <a class="dropdown-item drpitem" href="project-detail.html"><i class="fas fa-sliders-h eleico"></i> Carousels slider  </a>
+            </div> 
+            <div class="elementdrpss">
+              <a class="dropdown-item drpitem" href="project-detail.html"><i class="fal fa-table eleico"></i> Animation </a>
+              <a class="dropdown-item drpitem" href="project-detail.html"><i class="fas fa-th eleico"></i> Accordian </a>
+              <a class="dropdown-item drpitem" href="project-detail.html"> <i class="fas fa-exclamation-triangle eleico"></i> ALert Box </a>
+              <a class="dropdown-item drpitem" href="project-detail.html"><i class="fad fa-mailbox eleico"></i> Button  </a>
+              <a class="dropdown-item drpitem" href="project-detail.html"><i class="fas fa-user-friends eleico"></i> Clients  </a>
+              <a class="dropdown-item drpitem" href="project-detail.html"><i class="fal fa-id-card eleico"></i> Clients slider </a>
+              <a class="dropdown-item drpitem" href="project-detail.html"><i class="fas fa-sliders-h eleico"></i> Carousels slider  </a>
+          </div> 
+          <div class="elementdrps">
+            <a class="dropdown-item drpitem" href="project-detail.html"><i class="fal fa-table eleico"></i> Animation </a>
+            <a class="dropdown-item drpitem" href="project-detail.html"><i class="fas fa-th eleico"></i> Accordian </a>
+            <a class="dropdown-item drpitem" href="project-detail.html"> <i class="fas fa-exclamation-triangle eleico"></i> ALert Box </a>
+            <a class="dropdown-item drpitem" href="project-detail.html"><i class="fad fa-mailbox eleico"></i> Button  </a>
+            <a class="dropdown-item drpitem" href="project-detail.html"><i class="fas fa-user-friends eleico"></i> Clients  </a>
+            <a class="dropdown-item drpitem" href="project-detail.html"><i class="fal fa-id-card eleico"></i> Clients slider </a>
+            <a class="dropdown-item drpitem" href="project-detail.html"><i class="fas fa-sliders-h eleico"></i> Carousels slider  </a>
+        </div> 
+        <div class="elementdrps">
+          <a class="dropdown-item drpitem" href="project-detail.html"><i class="fal fa-table eleico"></i> Animation </a>
+          <a class="dropdown-item drpitem" href="project-detail.html"><i class="fas fa-th eleico"></i> Accordian </a>
+          <a class="dropdown-item drpitem" href="project-detail.html"> <i class="fas fa-exclamation-triangle eleico"></i> ALert Box </a>
+          <a class="dropdown-item drpitem" href="project-detail.html"><i class="fad fa-mailbox eleico"></i> Button  </a>
+          <a class="dropdown-item drpitem" href="project-detail.html"><i class="fas fa-user-friends eleico"></i> Clients  </a>
+          <a class="dropdown-item drpitem" href="project-detail.html"><i class="fal fa-id-card eleico"></i> Clients slider </a>
+          <a class="dropdown-item drpitem" href="project-detail.html"><i class="fas fa-sliders-h eleico"></i> Carousels slider  </a>
+      </div> 
+           </div>
+    </div>
+            </div>
+    </nav>
+    </div>
+    <div class="slidess">
+        <h2 class="about2"><b>Services </b> </h2>
+    </div>
+    <div class="hom">
+        <h6>
+            <a href="" class="home"><i class="fas fa-home-lg"></i> Home </a>
+
+            <span class="doublearrows"><i class="fas fa-chevron-double-right doub"></i> Services</span>
+        </h6>
+    </div>
+    <div class="third">
+        <div class="container">
+            <div class="fifthwr">
+                <h3><B> SERVICES </B></h3>
+                <h1 class="hryel"><b>_____<i class="far fa-square-full squ"></i>_____</b></h1>
+                <p class="abtpr">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                    has been the industry's standard dummy text ever since the 1500s.</p>
+            </div>
+            <div class="row">
+                <div class="col-sm best">
+                    <a href="" class="ancthird"><i class="far fa-futbol thirdico"></i></a>
+                    <h5><b>BEST QUALITY</b></h5>
+                    <p class="paraabt">Lorem Ipsum is simply dummy text of the printing and typesg indtrysum has been
+                        the Ipsum
+                        dummy of the printing indus .</p>
+                </div>
+                <div class="col-sm best">
+                    <a href="" class="ancthird"><i class="fas fa-trophy thirdico"></i></a>
+                    <h5><b>INTEGRITY</b></h5>
+                    <p class="paraabt">Lorem Ipsum is simply dummy text of the printing and typesg indtrysum has been
+                        the Ipsum
+                        dummy of the printing indus .</p>
+                </div>
+                <div class="col-sm best">
+                    <a href="" class="ancthird"><i class="fas fa-thumbs-up thirdico"></i></a>
+                    <h5><b>STRATEGY</b></h5>
+                    <p class="paraabt">Lorem Ipsum is simply dummy text of the printing and typesg indtrysum has been
+                        the Ipsum
+                        dummy of the printing indus .</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm best">
+                    <a href="" class="ancthird"> <i class="fas fa-user-friends thirdico"></i></a>
+                    <h5><b>SAFETY</b></h5>
+                    <p class="paraabt">Lorem Ipsum is simply dummy text of the printing and typesg indtrysum has been
+                        the Ipsum
+                        dummy of the printing indus .</p>
+                </div>
+                <div class="col-sm best">
+                    <a href="" class="ancthird"> <i class="fas fa-chart-area thirdico"></i></a>
+                    <h5><b>COMMUNITY</b></h5>
+                    <p class="paraabt">Lorem Ipsum is simply dummy text of the printing and typesg indtrysum has been
+                        the Ipsum
+                        dummy of the printing indus .</p>
+                </div>
+                <div class="col-sm best">
+                    <a href="" class="ancthird"><i class="fas fa-cogs thirdico"></i></a>
+                    <h5><b>SUSTAINABILITY</b></h5>
+                    <p class="paraabt">Lorem Ipsum is simply dummy text of the printing and typesg indtrysum has been
+                        the Ipsum
+                        dummy of the printing indus .</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="fourth">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="dropdown drp">
+                        <button class="btn btn-secondary btnconst" type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <b style="font-size: 15px;"><i class="far fa-globe-asia consico"></i>Construction</b>
+                        </button>
+                        <div class="dropdown-menu show drpmencons" aria-labelledby="dropdownMenuButton">
+                            <p><b><i>Web design lorem ipsum dolor sit amet, consectetuer adipiscing elit.</i></b>
+                                Suspendisse et justo. Praesent mattis commyolk augue Aliquam ornare hendrerit augue Cras
+                                tellus In pulvinar lectus
+                                a est Curabitur eget orci Cras laoreet. Lorem ipsum dolor sit amet, consectetuer
+                                adipiscing elit. Suspendisse et justo.
+                                Praesent mattis commyolk augue aliquam ornare augue. ipsum dolor sit amet, consectetuer
+                                adipiscing elit.
+                                Suspendisse et justo. Praesent mattis commyolk augue Aliquam ornare hendrerit augue Cras
+                                tellus In pulvinar
+                                lectus a est Curabitur eget orci Cras laoreet. Lorem ipsum dolor sit amet, consectetuer
+                                adipiscing elit.
+                                Suspendisse et justo. Praesent mattis commyolk augue aliquam ornare augue</p>
+                        </div>
+                    </div>
+                    <div class="dropdown drp">
+                        <button class="btn btn-secondary btnconst" type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <b style="font-size: 15px;"><i class="fas fa-chart-area consico"></i>Architecture</b>
+                        </button>
+                        <div class="dropdown-menu drpmenconst" aria-labelledby="dropdownMenuButton">
+                            <p><b><i>Graphic Design lorem ipsum dolor sit amet, consectetuer adipiscing elit.</i></b>
+                                Praesent Suspendisse et justo. mattis commyolk augue Aliquam ornare hendrerit augue Cras
+                                tellus In
+                                pulvinar lectus a est Curabitur eget orci Cras laoreet. Lorem ipsum dolor sit amet,
+                                consectetuer adipiscing elit.
+                                Suspendisse et justo. Praesent mattis commyolk augue aliquam ornare augue.</p>
+                        </div>
+                    </div>
+                    <div class="dropdown drp">
+                        <button class="btn btn-secondary btnconst" type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <b style="font-size: 15px;"><i class="fas fa-cogs consico"></i>Developement</b>
+                        </button>
+                        <div class="dropdown-menu drpmenconstt" aria-labelledby="dropdownMenuButton">
+                            <p><b><i>Developement lorem ipsum dolor sit amet, consectetuer adipiscing elit.</i></b>
+                                Commyolk Suspendisse et justo. Praesent mattis augue Aliquam ornare hendrerit augue Cras
+                                tellus In pulvinar lectus a est Curabitur eget orci Cras laoreet. Lorem ipsum dolor sit
+                                amet, consectetuer adipiscing elit.
+                                Suspendisse et justo. Praesent mattis commyolk augue aliquam ornare augue.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm colyou">
+                   <div class="youtubelink">
+                    <iframe class="youtub" src="https://www.youtube.com/embed/de9Mhw2dU60" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="fifth">
+        <div class="container">
+            <div class="fifthwri">
+                <h3><B> PRICING </B></h3>
+                <h1 class="hryel"><b>_____<i class="far fa-square-full squ"></i>_____</b></h1>
+                <p class="abtpr">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                    has been the industry's standard dummy text ever since the 1500s.</p>
+            </div>
+            <div class="row">
+              <div class="col-sm colspri">
+                <div class="writeprice">
+                    <div class="bas"><h5 class="basic">BASIC PLAN</h5></div>
+                    <div class="pri"><h1 class="dollar">$29 </h1><span class="mon"> / M</span></div>
+                    <p class="ticks">
+                        <i class="fas fa-check ic"></i>
+                        Phone & Email Support
+                    </p>
+                    <p class="tickss">
+                        <i class="fas fa-times ic"></i>
+                        3 Social Account
+                    </p>
+                    <p class="ticks">
+                        <i class="fas fa-check"></i>
+                        Branded Reports
+                    </p>
+                    <p class="tickss">
+                        <i class="fas fa-check"></i>
+                        Unlock rewards
+                    </p>
+                    <p class="ticks">
+                        <i class="fas fa-times"></i>
+                        Support Forum
+                    </p>
+
+                    <div class="but"><button type="button" class="btn btn-warning btnpur">PURCHASE</button></div>
+                </div>
+              </div>
+              <div class="col-sm colspri">
+                <div class="writeprices">
+                    <div class="bas"><h5 class="basic">PRO PLAN</h5></div>
+                    <div class="pris"><h1 class="dollar">$49 </h1><span class="mon"> / M</span></div>
+                    <p class="ticks">
+                        <i class="fas fa-check ic"></i>
+                        Phone & Email Support
+                    </p>
+                    <p class="tickss">
+                        <i class="fas fa-check"></i>
+                        3 Social Account
+                    </p>
+                    <p class="ticks">
+                        <i class="fas fa-check"></i>
+                        Branded Reports
+                    </p>
+                    <p class="tickss">
+                        <i class="fas fa-check"></i>
+                        Unlock rewards
+                    </p>
+                    <p class="ticks">
+                        <i class="fas fa-check"></i>
+                        Support Forum
+                    </p>
+
+                    <div class="but"><button type="button" class="btn btn-warning btnpur">PURCHASE</button></div>
+                </div>
+              </div>
+              <div class="col-sm colspri">
+                <div class="writeprice">
+                    <div class="bas"><h5 class="basic">PREMIUM PLAN</h5></div>
+                    <div class="pri"><h1 class="dollar">$99 </h1><span class="mon"> / M</span></div>
+                    <p class="ticks">
+                        <i class="fas fa-check ic"></i>
+                        Phone & Email Support
+                    </p>
+                    <p class="tickss">
+                        <i class="fas fa-check"></i>
+                        3 Social Account
+                    </p>
+                    <p class="ticks">
+                        <i class="fas fa-check"></i>
+                        Branded Reports
+                    </p>
+                    <p class="tickss">
+                        <i class="fas fa-check"></i>
+                        Unlock rewards
+                    </p>
+                    <p class="ticks">
+                        <i class="fas fa-check"></i>
+                        Support Forum
+                    </p>
+
+                    <div class="but"><button type="button" class="btn btn-warning btnpur">PURCHASE</button></div>
+                </div>
+              </div>
+              <div class="col-sm colspri">
+                <div class="writeprice">
+                    <div class="bas"><h5 class="basic">SILVER PLAN</h5></div>
+                    <div class="pri"><h1 class="dollar">$129 </h1><span class="mon"> / M</span></div>
+                    <p class="ticks">
+                        <i class="fas fa-check ic"></i>
+                        Phone & Email Support
+                    </p>
+                    <p class="tickss">
+                        <i class="fas fa-check"></i>
+                        3 Social Account
+                    </p>
+                    <p class="ticks">
+                        <i class="fas fa-check"></i>
+                        Branded Reports
+                    </p>
+                    <p class="tickss">
+                        <i class="fas fa-check"></i>
+                        Unlock rewards
+                    </p>
+                    <p class="ticks">
+                        <i class="fas fa-check"></i>
+                        Support Forum
+                    </p>
+
+                    <div class="but"><button type="button" class="btn btn-warning btnpur">PURCHASE</button></div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+
+    <div class="seventh">
+        <div style="line-height:1.8; color: white; display: inline-block;">
+            <h4><b>WE ARE READY TO BUILD YOUR DREAM TELL US MORE ABOUT YOUR PROJECT</b></h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse viverra mauris eget tortor.</p>
+        </div>
+        
+    <button type="button" class="btn btn-dark btncon"><b>CONTACT US </b>  <i class="fas fa-chevron-double-right condouble"></i></button>
+    </div>
+
+    <div class="eleven">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm aboutcomp">
+              <div>
+              <h5 style="color: white;"><b>ABOUT COMPANY</b></h5>
+              <i class="far fa-square-full sqfre"></i>
+                  <h1 class="hrye"><b>_____</b></h1></div>
+    
+                  <div class="buil">
+                    <h1 class="icobuil"><i class="fas fa-archway "></i></h1>
+                    <h1 style="display: inline-block;"><b style="color: white;">B</b><b class="u">U</b><b  style="color: white;">ILD</b> </h1>
+                  </div>
+                  <p class="builpara">
+                    Thewebmax ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore agna aliquam erat . wisi enim ad minim veniam, 
+                    quis tation. sit amet, consec tetuer. ipsum dolor sit amet, consectetuer adipiscing.ipsum dolor sit .
+                  </p>
+            </div>
+    
+            <div class="col-sm aboutcomp">
+              <div>
+              <h5 style="color: white;"><b>RECENT POST</b></h5>
+            <i class="far fa-square-full sqfre"></i>
+              <h1 class="hrye"><b>_____</b></h1>
+            </div>
+            <div>
+            <div class="datemar">
+              <h6 class="gre">20</h6>
+              <p class="mon">MAR</p>
+            </div>
+            <div class="blogg">
+              <p><a href="" class="blogtitle">Blog title first</a> </p>
+              <p><i class="fas fa-user blogico blico"></i><i class="by">By Admin /  </i><i class="blico fas fa-comments blogico"></i><i class="by"> 28 </i></p>
+            </div>
+          </div>
+          <div>
+            <div class="datemar">
+              <h6 class="gre">20</h6>
+              <p class="mon">MAR</p>
+            </div>
+            <div class="blogg">
+              <p><a href="" class="blogtitle">Blog title first</a> </p>
+              <p><i class="fas fa-user blogico blico"></i><i class="by">By Admin /  </i><i class="blico fas fa-comments blogico"></i><i class="by"> 28 </i></p>
+            </div>
+          </div>
+          <div>
+            <div class="datemar">
+              <h6 class="gre">20</h6>
+              <p class="mon">MAR</p>
+            </div>
+            <div class="blogg">
+              <p><a href="" class="blogtitle">Blog title first</a> </p>
+              <p><i class="fas fa-user blogico blico"></i><i class="by">By Admin /  </i><i class="blico fas fa-comments blogico"></i><i class="by"> 28 </i></p>
+            </div>
+          </div>
+            </div>
+    
+            <div class="col-sm aboutcomp">
+              <div>
+              <h5 style="color: white;"><b>USEFUL LINKS</b></h5>
+          <i class="far fa-square-full sqfre"></i>
+              <h1 class="hrye"><b>_____</b></h1>
+            </div>
+            <div class="links">
+              <i class="fas fa-chevron-double-right doublearrow"></i><a href="" class="abtlink"> About</a>
+              <hr class="dashed">
+            </div>
+            <div class="links">
+              <i class="fas fa-chevron-double-right doublearrow"></i><a href="" class="abtlink"> FAQ</a>
+              <hr class="dashed">
+            </div>
+            <div class="links">
+              <i class="fas fa-chevron-double-right doublearrow"></i><a href="" class="abtlink"> Career</a>
+              <hr class="dashed">
+            </div>
+            <div class="links">
+              <i class="fas fa-chevron-double-right doublearrow"></i><a href="" class="abtlink"> Our Team</a>
+              <hr class="dashed">
+            </div>
+            <div class="links">
+              <i class="fas fa-chevron-double-right doublearrow"></i><a href="" class="abtlink"> Services</a>
+              <hr class="dashed">
+            </div>
+            <div class="links">
+              <i class="fas fa-chevron-double-right doublearrow"></i><a href="" class="abtlink"> Gallery</a>
+            </div>
+    
+            </div>
+            <div class="col-sm aboutcomp">
+              <h5 style="color: white;"><b>NEWSLETTER</b></h5>
+          <i class="far fa-square-full sqfre"></i>
+              <h1 class="hrye"><b>_____</b></h1>
+              <div class="inputemail">
+                <input type="email" placeholder="ENTER YOUR EMAIL" name="email" class="inpu" required>
+                <button type="button" class="btn btn-warning sendbtn"><i class="fab fa-telegram-plane"></i></button>
+              </div>
+              <h5 style="color: white;"><b>SOCIAL LINKS</b></h5>
+          <i class="far fa-square-full sqfre"></i>
+              <h1 class="hrye"><b>_____</b></h1>
+              <div class="">
+                <a href="" class="soclinkicofs"><i class="fab fa-facebook-f"></i></a>
+                <a href="" class="soclinkicos"><i class="fab fa-twitter"></i></a>
+                <a href="" class="soclinkicos"><i class="fab fa-linkedin-in"></i></a>
+                <a href="" class="soclinkicos"><i class="fas fa-wifi"></i></a>
+                <a href="" class="soclinkicos"><i class="fab fa-youtube"></i></a>
+                <a href="" class="soclinkicos"><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="tenth">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm add">
+                  <h5 class="addico"><i class="fal fa-map-marker-alt"></i></h5>
+                  <div class="addinfo">
+                    <h5 style="color: white !important;"><b>ADDRESS</b> </h5>
+                    <p>No.123 Chalingt Gates, Supper market New York</p>
+                  </div>
+                </div>
+                <div class="col-sm add">
+                  <h5 class="addico"><i class="fal fa-mobile-alt"></i></h5>
+                  <div class="addinfo">
+                    <h5 style="color: white !important;"><b>PHONE</b> </h5>
+                    <p>+41 555 888 9585</p>
+                    <p class="numb">+41 555 888 9585</p>
+                  </div>
+                </div>
+                <div class="col-sm add">
+                  <h5 class="addico"><i class="far fa-print"></i></h5>
+                  <div class="addinfofax">
+                    <h5 style="color: white !important;"><b>FAX</b> </h5>
+                    <p>FAX: (123) 123-4567</p>
+                    <p class="numb">FAX: (123) 123-4567</p>
+                  </div>
+                </div>
+                <div class="col-sm add">
+                  <h5 class="addico"><i class="fal fa-envelope-open-text"></i></h5>
+                  <div class="addinfoemail">
+                    <h5 style="color: white !important;"><b>EMAIL</b> </h5>
+                    <p>info@demo.com</p>
+                      <p class="numb">info@demo1234.com</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class=" copyright">
+        <p class="yourcom">© 2017 Your Company. All Rights Reserved. Designed By thewebmax.</p>
+        <div class="terms">
+          <a href="" class="termlink">Terms & Condition </a><span class="sleach"> / </span>
+          <a href="" class="termlink"> Privacy Policy </a><span class="sleach"> / </span>
+          <a href="" class="termlink"> Contact Us </a>
+        </div>
+      </div>
+      <a href="#" class="fixed bottomMenu">
+        <div class="">
+          <i class="fas fa-arrow-alt-up" style="font-size: 20px; font-weight: bold;"></i>
+          <h5>TOP</h5>
+        </div></a>
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script>
+      $(document).ready(function() {
+    $(window).scroll( function(){
+        $('.bottomMenu').each( function(i){
+            var bottom_of_object = $(this).position().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            if( bottom_of_window > bottom_of_object ){
+                $(this).animate({'opacity':'1'},1000);
+            }
+        }); 
+    });
+});
+    </script>
+    
+
+
+</body>
+
+</html>
